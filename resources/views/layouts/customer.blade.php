@@ -1,0 +1,5 @@
+@include('customer.includes.head')
+@include('customer.includes.navbar')
+@yield('header')
+@yield('content')
+@include('customer.includes.footer')

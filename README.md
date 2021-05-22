@@ -1,78 +1,89 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
-
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
-
-## About Laravel
-
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
-
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
-- [Appoly](https://www.appoly.co.uk)
-- [OP.GG](https://op.gg)
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+# Online Ordering Food (Like Talabt Application)
+## Application Features 
+### Website
+1. #### Searching
+    1. Searching About Restaurants By Location.
+    2. All Restaurants At This Location Always Ordered By The Opened Status.
+       * After Searching By Location , Now You Can Search By Name.
+    4. Filter The Restaurants By Categories.
+    5. Sorting By Fast Delivery , Low Delivery Cost And Newest Restaurant.
+    6. Choose Form Opened Restaurants List For Products Browsing.
+       * You Can Browse Closed Restaurant But You Can't Order From It.
+2. #### Restaurant Page
+    1. Contains Restaurant's Name , Logo , Mobile , Email , Exists Location And Status.
+    2. Also Contains See Your Cart At The Right Side Of The Screen
+    3. Also Contains All Products 
+        1. Products Grouped By Restaurant Categories.
+        2. Products Box Has The Product's Name , Description , Image , Price And Add Button.
+        3. Left Side Of The Screen Contains Links Quickly Goto The Spacific Category.
+        4. You Can Search About Product In Only In The Restaurant Menu (Not All Restaurant).
+    4. Your Cart
+        1. After Adding And Item To Your Cart You Can
+            1. (+) To Increment The Quantity Of The Item.
+            2. (-) To Decrement The Quantity Of The Item (if The Quantity = 0 Automatically Removed From Your Cart).
+            3. (x) To Remove Item From Your Cart (Removed With Any Quantity).
+         2. You Can Find A Delete Button To Clear Your Cart.
+         3. You Can't Add Items From More Than One Restaurant.
+         4. Now Goto Checkout To Confirm Your Order
+            1. Here You Must Add Your Location In Details.
+            2. Write Your Spectial Request On Your Order.
+  3. #### Checkout Page 
+     1. First You Must Be Logied In To Visit Checkout Page And Confirm Your Order 
+     2. You Will Find Your Receipt Contains
+        1. Restaurant , User (You) And Order Details.
+        2. Find Cancel And Confirm Buttons.
+  4. #### Orders Page
+     1. Current Orders
+        1. For All Current Orders Which Could be In-Progress (Not Confirmed From Restaurnt Side) , Prepared (Accepted From Restaurant) And ON The Way.
+        2. By Click On Order Card You Will See The Order Details.
+        3. By Click The Track Order Button You Will See The Status Of You Order And The Estimated Delivery Time (Upon On Restaurant Delivery Time).
+     2. Previous Orders
+        1. For All Previous Orders Whitch Could be Completed (Delivered) Or Cancelled Order.
+        2. By Click On Order Card You Will See The Order Details.       
+### Restaurant Dashboard
+  1. #### Home Page (Statisticals)
+     * Count Of Products , Categories , Current Orders , Previous Orders , Earnings And Related Users (Customers).
+  2. #### Categories Page
+     * Add , Edit And Delete Categories (Categories Of The Restaurant).   
+  3. #### Products Page
+     * Add , Edit And Delete Product.
+  4. #### Current Orders Page
+     1. Can See Order Details.
+     2. Can Change Order Status From List (Accepted , On The Way And Completed).
+  5. #### Previous Orders Page 
+     * Can See Order Details.
+  6. #### Profile Page 
+     * Can Change His Info And Status (Opened Closed). 
+### Admin Dashboard
+  1. #### Home Page (Statisticals)
+     * Count Of All Products , All Categories , Current Orders , Previous Orders , Earnings , Users And Restaurants.
+  2. #### Categories Page
+     * Add , Edit And Delete Categories (Categories Of The Website).
+  2. #### Regions Page
+     * Add , Edit And Delete Regions (Regions Which The Application Available On It).   
+  3. Products Page
+     * See All Products And Its' Restaurant Product.
+  4. #### Current Orders Page
+     1. Can See Order Details. 
+  5. #### Previous Orders Page 
+     * Can See Order Details.
+  6. #### Current Restaurants Page
+     * Can See Restaurant Details.
+     * Can Block And Unblock Any Restaurant.
+  7. #### Pending Restaurants Page
+     * Can See Restaurant Details.
+     * Can Accept Or Reject Restaurant Registartion Request.
+  8. #### Users Page
+     * Can See Users Details.
+     * Can Block And Unblock Any User.
+  9. #### Edit Profile Page
+  
+  ### Notes:-
+  **In Main Project Folder There Is _store.sql_ Database Backup.**\
+  **By Register As Restaurant Or User You Need Confirmation By Email SO _Change Mailtrap.io_ To Your Mailtrap Account To Receive The Confirmation Mail.**\
+  **By Register As Restaurant You Won't Be Able To Login Before Admin Acceptance.**
+  #### Admin Credentials:-
+  **_Username:abdoelgenedi@gmail.com._**\
+  **_Password:12345678._**
+  
+   
